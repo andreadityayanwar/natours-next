@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import '../css/style.css'
 
@@ -8,7 +7,16 @@ export default function Home() {
   return (
     <body>
       <header className='header'>
-        Some Text...
+        <div className='logo-box'>
+          <img src='/img/logo-white.png' alt='logo' className='logo'/>
+        </div>
+
+        <div className='text-box'>
+          <h1 className='heading-primary'>
+            <span className='heading-primary-main'>Outdoors</span>
+            <span className='heading-primary-sub'>is where life happens</span>
+          </h1>
+        </div>
       </header>
     </body>
     // <main className={styles.main}>
