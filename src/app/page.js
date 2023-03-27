@@ -1,7 +1,4 @@
-import { Inter } from 'next/font/google'
 import '../css/style.css'
-
-const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
   return (
@@ -14,7 +11,7 @@ export default function Home() {
         <div className='text-box'>
           <h1 className='heading-primary'>
             <span className='heading-primary-main'>Outdoors</span>
-            <span className='heading-primary-sub'>is where life happens</span>
+            <span className='heading-primary-sub'>is where life happen</span>
           </h1>
         </div>
       </header>
