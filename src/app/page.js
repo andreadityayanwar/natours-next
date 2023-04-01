@@ -1,103 +1,187 @@
-import '../css/style.css'
+import '../sass/main.scss'
 
 export default function Home() {
   return (
-    <body>
-      <header className='header'>
-        <div className='logo-box'>
-          <img src='/img/logo-white.png' alt='logo' className='logo'/>
+    <>
+
+      <header className="header">
+        <div className="header__logo-box">
+          <img src="img/logo-white.png" alt="Logo" className="header__logo" />
         </div>
 
-        <div className='text-box'>
-          <h1 className='heading-primary'>
-            <span className='heading-primary-main'>Outdoors</span>
-            <span className='heading-primary-sub'>is where life happen</span>
+        <div className="header__text-box">
+          <h1 className="heading-primary">
+            <span className="heading-primary--main">Outdoors</span>
+            <span className="heading-primary--sub">is where life happens</span>
           </h1>
 
-          <a href='#' className='btn btn-white'>Discover our tours</a>
+          <a href="#" className="btn btn--white btn--animated">Discover our tours</a>
         </div>
       </header>
-    </body>
-    // <main className={styles.main}>
-    //   <div className={styles.description}>
-    //     <p>
-    //       Get started by editing&nbsp;
-    //       <code className={styles.code}>src/app/page.js</code>
-    //     </p>
-    //     <div>
-    //       <a
-    //         href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //         target="_blank"
-    //         rel="noopener noreferrer"
-    //       >
-    //         By{' '}
-    //         <Image
-    //           src="/vercel.svg"
-    //           alt="Vercel Logo"
-    //           className={styles.vercelLogo}
-    //           width={100}
-    //           height={24}
-    //           priority
-    //         />
-    //       </a>
-    //     </div>
-    //   </div>
 
-    //   <div className={styles.center}>
-    //     <Image
-    //       className={styles.logo}
-    //       src="/next.svg"
-    //       alt="Next.js Logo"
-    //       width={180}
-    //       height={37}
-    //       priority
-    //     />
-    //     <div className={styles.thirteen}>
-    //       <Image src="/thirteen.svg" alt="13" width={40} height={31} priority />
-    //     </div>
-    //   </div>
+      <main>
+        <section className="section-about">
+          <div className="u-center-text u-margin-bottom-big">
+            <h2 className="heading-secondary">
+              Exciting tours for adventurous people
+            </h2>
+          </div>
 
-    //   <div className={styles.grid}>
-    //     <a
-    //       href="https://beta.nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={inter.className}>
-    //         Docs <span>-&gt;</span>
-    //       </h2>
-    //       <p className={inter.className}>
-    //         Find in-depth information about Next.js features and API.
-    //       </p>
-    //     </a>
+          <div className="row">
+            <div className="col-1-of-2">
+              <h3 className="heading-tertiary u-margin-bottom-small">
+                You`re going to fall in love with nature
+              </h3>
+              <p className="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam nesciunt delectus possimus quod placeat blanditiis! Optio suscipit laboriosam dolore a harum magni maiores non.
+              </p>
 
-    //     <a
-    //       href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={inter.className}>
-    //         Templates <span>-&gt;</span>
-    //       </h2>
-    //       <p className={inter.className}>Explore the Next.js 13 playground.</p>
-    //     </a>
+              <h3 className="heading-tertiary u-margin-bottom-small">
+                Live adventures like you never have before
+              </h3>
+              <p className="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci excepturi, illo quos vero consectetur iste enim quibusdam nisi quas rerum cum soluta.
+              </p>
 
-    //     <a
-    //       href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-    //       className={styles.card}
-    //       target="_blank"
-    //       rel="noopener noreferrer"
-    //     >
-    //       <h2 className={inter.className}>
-    //         Deploy <span>-&gt;</span>
-    //       </h2>
-    //       <p className={inter.className}>
-    //         Instantly deploy your Next.js site to a shareable URL with Vercel.
-    //       </p>
-    //     </a>
-    //   </div>
-    // </main>
+              <a href="#" className="btn-text">Learn more &rarr;</a>
+            </div>
+
+            <div className="col-1-of-2">
+              <div className="composition">
+                <img src="img/nat-1-large.jpg" alt="Photo 1" className="composition__photo composition__photo--p1" />
+                <img src="img/nat-2-large.jpg" alt="Photo 2" className="composition__photo composition__photo--p2" />
+                <img src="img/nat-3-large.jpg" alt="Photo 3" className="composition__photo composition__photo--p3" />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-features">
+          <div className="row">
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-world"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Explore the world
+                </h3>
+                <p className="feature-box__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam
+                </p>
+              </div>
+            </div>
+
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-compass"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Meet nature
+                </h3>
+                <p className="feature-box__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam
+                </p>
+              </div>
+            </div>
+
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-map"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Find your way
+                </h3>
+                <p className="feature-box__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam
+                </p>
+              </div>
+            </div>
+
+            <div className="col-1-of-4">
+              <div className="feature-box">
+                <i className="feature-box__icon icon-basic-heart"></i>
+                <h3 className="heading-tertiary u-margin-bottom-small">
+                  Live is a health ever
+                </h3>
+                <p className="feature-box__text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section className="section-tours">
+
+        </section>
+      </main>
+
+      {/* 
+      <section className="grid-test">
+        <div className="row">
+          <div className="col-1-of-2">
+            Col 1 of 2
+          </div>
+          <div className="col-1-of-2">
+            Col 1 of 2
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-3">
+            Col 1 of 3
+          </div>
+          <div className="col-2-of-3">
+            Col 2 of 3
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-2-of-4">
+            Col 2 of 4
+          </div>
+        </div>
+
+        <div className="row">
+          <div className="col-1-of-4">
+            Col 1 of 4
+          </div>
+          <div className="col-3-of-4">
+            Col 3 of 4
+          </div>
+        </div>
+      </section> 
+      */}
+    </>
   )
 }
