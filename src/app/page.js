@@ -211,7 +211,44 @@ export default function Home() {
           <div className='u-center-text u-margin-huge-big'>
             <a href='#' className='btn btn--green'>Discover all tours</a>
           </div>
+        </section>
 
+        <section className='section-stories'>
+          <div className='u-center-text u-margin-bottom-big'>
+            <h2 className='heading-secondary'>
+              We Make People Genuinely Happy
+            </h2>
+          </div>
+
+          <div className='row'>
+            <div className='story'>
+              <figure className='story__shape'>
+                <img src='img/people-1.jpg' alt='Person on a tour' className='story__image'></img>
+                <figcaption className='story__caption'>Andre Aditya</figcaption>
+              </figure>
+              <div className='story__text'>
+                <h3 className='heading-tertiary u-margin-bottom-small'>I had the best week ever with my family</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='row'>
+            <div className='story'>
+              <figure className='story__shape'>
+                <img src='img/people-2.jpg' alt='Person on a tour' className='story__image'></img>
+                <figcaption className='story__caption'>Aditya Yanwar</figcaption>
+              </figure>
+              <div className='story__text'>
+                <h3 className='heading-tertiary u-margin-bottom-small'>WOW! My life is completely different now</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam. Sint, praesentium quam dolor, enim molestias aliquam.</p>
+              </div>
+            </div>
+          </div>
+
+          <div className='u-center-text u-margin-huge-big'>
+            <a href='#' className='btn-text'>Read all stories &rarr;</a>
+          </div>
         </section>
       </main>
 
