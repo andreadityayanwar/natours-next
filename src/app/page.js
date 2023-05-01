@@ -3,7 +3,6 @@ import '../sass/main.scss'
 export default function Home() {
   return (
     <>
-
       <header className="header">
         <div className="header__logo-box">
           <img src="img/logo-white.png" alt="Logo" className="header__logo" />
@@ -214,6 +213,13 @@ export default function Home() {
         </section>
 
         <section className='section-stories'>
+          <div className='bg-video'>
+            <video className='bg-video__content' autoPlay muted loop>
+              <source src='img/video.mp4' type='video/mp4'></source>
+              <source src='img/video.webm' type='video/webm'></source>
+              Your browser is not supported!
+            </video>
+          </div>
           <div className='u-center-text u-margin-bottom-big'>
             <h2 className='heading-secondary'>
               We Make People Genuinely Happy
@@ -248,6 +254,32 @@ export default function Home() {
 
           <div className='u-center-text u-margin-huge-big'>
             <a href='#' className='btn-text'>Read all stories &rarr;</a>
+          </div>
+        </section>
+
+        <section className='section-book'>
+          <div className='row'>
+            <div className='book'>
+              <div className='book__form'>
+                <form action='#' className='form'>
+                  <div className='u-margin-bottom-medium'>
+                    <h2 className='heading-secondary'>
+                      Start booking now
+                    </h2>
+                  </div>
+
+                  <div className='form__group'>
+                    <input type='text' className='form__input' placeholder='Full name' id='name' required></input>
+                    <label for='name' className='form__label'>Full name</label>
+                  </div>
+
+                  <div className='form__group'>
+                    <input type='email' className='form__input' placeholder='Email address' id='email' required></input>
+                    <label for='email' className='form__label'>Email address</label>
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </section>
       </main>
